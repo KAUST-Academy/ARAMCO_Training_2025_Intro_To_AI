@@ -1,2 +1,2 @@
-# CNHI Training Program: Introduction to ML and AI with Python
+# Aramco Training Program: Introduction to AI
 Website for Aramco Employees on Introduction to AI
