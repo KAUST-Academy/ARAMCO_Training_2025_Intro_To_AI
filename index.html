@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Course 2: AI - Home</title>
+
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">ARAMCO TRAINING</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="day1.html">Day 1</a></li>
+          <li><a href="day2.html">Day 2</a></li>
+          <li><a href="day3.html">Day 3</a></li>
+          <li><a href="day4.html">Day 4</a></li>
+          <li><a href="day5.html">Day 5</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="container text-center animate-up">
+      <h1>Introduction to <br><span>Artificial Intelligence</span></h1>
+      <h2 class="animate-up delay-100">Neural Networks, PyTorch, Computer Vision, NLP & Reinforcement Learning</h2>
+      <a href="day1.html" class="btn-get-started animate-up delay-200">Start Day 1</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features" style="padding: 60px 0;">
+      <div class="container">
+        
+        <div class="section-title text-center mb-5 animate-up">
+          <p style="color: var(--primary-red); font-weight: bold; letter-spacing: 1px;">COURSE SCHEDULE</p>
+          <h3>Daily Breakdown</h3>
+        </div>
+
+        <div class="row">
+          <!-- Day 1 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-100">
+            <div class="icon-box w-100">
+              <i class="ri-brain-line"></i>
+              <h3><a href="day1.html">Day 1: Neural Networks</a></h3>
+              <p>Forward Pass, Backpropagation, and Deep Dive into PyTorch.</p>
+            </div>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-200">
+            <div class="icon-box w-100">
+              <i class="ri-eye-2-line"></i>
+              <h3><a href="day2.html">Day 2: CNNs & Optimization</a></h3>
+              <p>Regularization, SGD/Adam, and Convolutional Neural Networks.</p>
+            </div>
+          </div>
+
+          <!-- Day 3 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-300">
+            <div class="icon-box w-100">
+              <i class="ri-video-line"></i>
+              <h3><a href="day3.html">Day 3: Advanced CV & RNNs</a></h3>
+              <p>Segmentation, Tracking, and Recurrent Neural Networks.</p>
+            </div>
+          </div>
+
+          <!-- Day 4 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-100">
+            <div class="icon-box w-100">
+              <i class="ri-chat-voice-line"></i>
+              <h3><a href="day4.html">Day 4: NLP Applications</a></h3>
+              <p>Text Classification, Sentiment Analysis, and Transformers.</p>
+            </div>
+          </div>
+
+          <!-- Day 5 -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-200">
+            <div class="icon-box w-100">
+              <i class="ri-robot-line"></i>
+              <h3><a href="day5.html">Day 5: Reinforcement Learning</a></h3>
+              <p>Agents, Rewards, Q-Learning, and Certification.</p>
+            </div>
+          </div>
+          
+          <!-- Instructions -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4 animate-up delay-300">
+            <div class="icon-box w-100" style="border-bottom-color: var(--text-black);">
+              <i class="ri-file-info-line" style="color: var(--text-black) !important;"></i>
+              <h3><a href="#">Resources</a></h3>
+              <p>Access datasets, notebooks, and supplementary reading materials.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center w-100">
+        <div class="copyright">
+          &copy; Copyright <strong><span>KAUST Academy</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  
+  <!-- JAVASCRIPT LOGIC FOR THE BURGER MENU -->
+  <script>
+    AOS.init();
+
+    /**
+     * Mobile nav toggle
+     */
+    const on = (type, el, listener, all = false) => {
+      let selectEl = document.querySelector(el);
+      if (selectEl) {
+        selectEl.addEventListener(type, listener);
+      }
+    }
+
+    on('click', '.mobile-nav-toggle', function(e) {
+      document.querySelector('#navbar').classList.toggle('navbar-mobile')
+      this.classList.toggle('bi-list')
+      this.classList.toggle('bi-x')
+    })
+  </script>
+
+</body>
+</html>
