@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Day 5 - RL & Closing</title>
-  
+
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -35,8 +35,8 @@
   <main id="main">
     <div class="breadcrumbs animate-up">
       <div class="container">
-        <h2>Day 5: Reinforcement Learning & Conclusion</h2>
-        <p>Introduction to Reinforcement Learning (RL), Agents, Rewards, and Certification.</p>
+        <h2>Day 5: NLP 2</h2>
+        <p>NLP continued</p>
       </div>
     </div>
 
@@ -45,43 +45,31 @@
         <table class="custom-table">
           <thead>
             <tr>
-              <th scope="col" style="width: 15%">Time</th>
               <th scope="col" style="width: 25%">Topic</th>
               <th scope="col">Description & Objectives</th>
-              <th scope="col" style="width: 10%; text-align: center;">Resource</th>
+              <th scope="col" style="width: 20%; text-align: center;">Resource</th>
             </tr>
           </thead>
           <tbody>
+
             <tr>
-              <td>09:00 - 10:30</td>
-              <td><strong>Introduction to RL</strong></td>
-              <td>Agents, environments, rewards. Q-learning and Policy Gradients.</td>
-              <td class="text-center"><a href="#" class="table-btn">Open</a></td>
+              <td><strong>Transformers_Annotated</strong></td>
+              <td>Transformers_Annotated<br></td>
+              <td class="text-center"><a href="./Slides/Day_5/Transformers_Annotated.pdf" class="table-btn">Open</a>
+              </td>
             </tr>
-            <tr>
-              <td>10:30 - 10:45</td>
-              <td><strong>Break</strong></td>
-              <td>Coffee & Networking</td>
-              <td class="text-center">-</td>
+
+            <td><strong>VLM</strong></td>
+            <td>VLM<br></td>
+            <td class="text-center">
+              <a href="https://github.com/KAUST-Academy/ARAMCO_Training_2025_Intro_To_AI/raw/main/Labs/Day_5/VLM.ipynb"
+                class="table-btn" download>Download</a>
+              <a href="https://colab.research.google.com/github/KAUST-Academy/ARAMCO_Training_2025_Intro_To_AI/blob/main/Labs/Day_5/VLM.ipynb"
+                class="table-btn">Colab</a>
+            </td>
             </tr>
-            <tr>
-              <td>10:45 - 12:15</td>
-              <td><strong>Implementing RL</strong></td>
-              <td>Building and training a simple RL agent using Python.<br><small style="color: #666">Discussion on challenges.</small></td>
-              <td class="text-center"><a href="#" class="table-btn">Open</a></td>
-            </tr>
-            <tr>
-              <td>12:15 - 13:15</td>
-              <td><strong>Lunch Break</strong></td>
-              <td>Prayer & Lunch</td>
-              <td class="text-center">-</td>
-            </tr>
-            <tr>
-              <td>13:15 - 15:00</td>
-              <td><strong>Closing & Certification</strong></td>
-              <td>Recap, feedback, and certificate distribution.</td>
-              <td class="text-center"><a href="#" class="table-btn">Open</a></td>
-            </tr>
+
+
           </tbody>
         </table>
       </div>
@@ -91,7 +79,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script>AOS.init();</script>
-    <script>
+  <script>
     AOS.init();
 
     /**
@@ -104,12 +92,12 @@
       }
     }
 
-    on('click', '.mobile-nav-toggle', function(e) {
+    on('click', '.mobile-nav-toggle', function (e) {
       document.querySelector('#navbar').classList.toggle('navbar-mobile')
       this.classList.toggle('bi-list')
       this.classList.toggle('bi-x')
     })
   </script>
 </body>
-</html>
 
+</html>
